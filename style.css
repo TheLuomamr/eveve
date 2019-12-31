@@ -1,15 +1,11 @@
 body{
-    background-image: url("https://cdn.pixabay.com/photo/2017/10/26/19/45/christmas-2892235_960_720.png");
-    background-size: cover;
+    height: auto;
 }   
 
+
 h1{
-    color: white;
+    color: red;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 30px;
     font-style: oblique;
-}
-div{
-    padding: 30px;
-    margin: 250px;
 }
