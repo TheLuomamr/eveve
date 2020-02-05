@@ -6,10 +6,12 @@ font-family: 'Mountains of Christmas', cursive;*/
 /* font-family:ChristmasTimePersonalUse-Regula; */
 
 /*==============================================*/
+
 body {
   min-width: 100%;
   min-height: 100%;
 }
+
 .jumbotron {
   height: 115vh;
   width: auto;
@@ -110,7 +112,9 @@ body {
   height: auto;
 }
 .card-img-top {
-  height: 350px;
+  min-height: 350px;
+  max-height: 350px;
+
   object-fit: cover;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -249,3 +253,90 @@ footer{
   height: 100px;;
   background:black
 }
+.eveve{
+  bottom:0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+/*===========MEDIA==============*/
+@media only screen and (max-width: 600px){
+  .eveve{
+    top:0
+  }
+  .jumbotron h1{
+    font-size: 60px;;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  @media only screen and (min-width: 1200px) {
+    .storyText {
+      border-left: black solid 2px;
+      font-size: 20px;
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+    .story {
+      font-size: 175px;
+    }
+    .card-img-top {
+      min-height: 550px;
+      max-height: 550px;
+    
+      object-fit: cover;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+    }
+    .profileText {
+      height: auto;
+      padding-left: 8%;
+      padding-right: 8%;
+      font-size:20px;
+    }
+    .contact-form{
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    .contact{
+      padding-top: 2%;
+    }
+    .team {
+      position: relative;
+      font-size: 135px;
+      font-family: "Vidaloka", serif;
+    }
+    .jumbotron h1 {
+      font-size: 9vw;
+      text-align: center;
+      color: red;
+      font-family: "Amatic SC", cursive;
+      margin-bottom: 0px;
+    }
+    .iconTab {
+      float: left;
+      font-size: 35px;
+      padding-left: 2px;
+      color: #b3000c;
+    }
+    #mySidenav a {
+      position: fixed;
+      right: -110px;
+      transition: 0.3s;
+      padding: 5px;
+      width: 165px;
+      text-decoration: none;
+      font-size: 22px;
+      color: #b3000c;
+      border-radius: 5px 0px 0px 5px;
+      text-align: right;
+      z-index: 5;
+      font-family: "Amatic SC", cursive;
+      margin-top: 100px;
+      letter-spacing: 0.05cm;
+      font-weight: bolder;
+    }
+  }
+}
+
+
