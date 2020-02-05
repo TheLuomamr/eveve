@@ -260,7 +260,7 @@ footer{
   position: absolute;
 }
 /*===========MEDIA==============*/
-@media only screen and (max-width: 600px){
+@media (min-width: 300px) and (max-width: 700px){
   .eveve{
     top:0
   }
@@ -270,6 +270,7 @@ footer{
   .photoText {
     font-size: 60px;
   }
+  
 }
 
 @media only screen and (min-width: 900px) {
@@ -339,6 +340,13 @@ footer{
       letter-spacing: 0.05cm;
       font-weight: bolder;
     }
+    .timer{
+      font-size: 45px;
+    }
+    #demo{
+      font-size: 35px;;
+    }
+    
   }
 }
 
