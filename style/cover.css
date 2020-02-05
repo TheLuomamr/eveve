@@ -258,7 +258,7 @@ footer{
   position: absolute;
 }
 /*===========MEDIA==============*/
-@media (min-width: 300px) and (max-width: 700px){
+/* @media (min-width: 300px) and (max-width: 700px){
   .eveve{
     top:0
   }
@@ -346,6 +346,22 @@ footer{
     }
     
   }
-}
-
-
+} */
+/* 
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+  .eveve{
+    top:0;
+  }
+  .jumbotron h1 {
+    font-size: 20vw;
+    text-align: center;
+    color: red;
+    font-family: "Amatic SC", cursive;
+    margin-bottom: 0px;
+    letter-spacing: 0.25cm;
+  }
+  
+} */
