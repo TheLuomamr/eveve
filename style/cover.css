@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC&display=swap");
+/*font-family: 'Vidaloka', serif;
+font-family: 'Mountains of Christmas', cursive;*/
+/* font-family:ChristmasTimePersonalUse-Regula; */
+
+/*==============================================*/
+body {
+  min-width: 100%;
+  min-height: 100%;
+}
+.jumbotron {
+  height: 115vh;
+  width: auto;
+  background-image: url("../images/Profilepics/FotoJet.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: black solid 2px;
+  position: relative;
+}
+.jumbotron h1 {
+  font-size: 11vw;
+  text-align: center;
+  color: red;
+  font-family: "Amatic SC", cursive;
+  margin-bottom: 0px;
+  letter-spacing: 0.25cm;
+}
+/*==========SIDE NAV============= */
+#mySidenav a {
+  position: fixed;
+  right: -110px;
+  transition: 0.3s;
+  padding: 5px;
+  width: 150px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #b3000c;
+  border-radius: 5px 0px 0px 5px;
+  text-align: right;
+  z-index: 5;
+  font-family: "Amatic SC", cursive;
+  margin-top: 100px;
+  letter-spacing: 0.05cm;
+  font-weight: bolder;
+}
+
+#mySidenav a:hover {
+  right: 0;
+}
+
+#aboutTab {
+  top: 20px;
+  background-color: #959b8f;
+}
+
+#photoTab {
+  top: 80px;
+  background-color: #959b8f;
+}
+
+#profileTab {
+  top: 140px;
+  background-color: #959b8f;
+}
+
+#contactTab {
+  top: 200px;
+  background-color: #959b8f;
+}
+.iconTab {
+  float: left;
+  font-size: 25px;
+  padding-left: 6px;
+  color: #b3000c;
+}
+/*==========SIDE NAV============= */
+#about {
+  border-bottom: black solid 2px;
+}
+.story {
+  font-size: 150px;
+}
+.storyText {
+  border-left: black solid 2px;
+}
+#photos {
+  border-bottom: black solid 2px;
+  background-color: #d1d6cb;
+}
+.photoText {
+  font-size: 90px;
+}
+
+
+.header {
+  position: relative;
+}
+
+
+.rounded-circle {
+  height: 320px;
+  width: 320px;
+  border: white solid 5px;
+  box-shadow: 1px 0px 8px 8px rgba(84, 80, 81, 0.95);
+}
+.profileText {
+  height: auto;
+}
+.card-img-top {
+  height: 350px;
+  object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.card-img-top:hover {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition-duration: 0s;
+}
+.card {
+  border-radius: 15px;
+  box-shadow: 0 10px 20px 0 rgba(61, 100, 64, 1.9),
+    0 6px 20px 0 rgba(0, 0, 0, 0.39);
+}
+.cardBtn {
+  width: auto;
+}
+.card-body {
+  padding: 0px;
+  border-radius: 15px;
+}
+.rightColumn {
+  border-left: black solid 2px;
+}
+.contact {
+  background-color: #d1d6cb;
+  border-top: black solid 3px;
+  border-bottom: black solid 3px;
+}
+#profiles {
+  /* background-color: #d1d6cb; */
+  position: relative;
+}
+.card-title {
+  font-family: "Amatic SC", cursive;
+  font-size: 40px;
+  margin: 0px;
+  color: rgba(235, 11, 11, 0.829);
+  font-weight: bold;
+}
+h2 {
+  font-family: "Vidaloka", serif;
+  font-size: 40px;
+}
+
+h1 {
+  font-family: "Vidaloka", serif;
+}
+.team {
+  position: relative;
+  font-size: 105px;
+  font-family: "Vidaloka", serif;
+}
+.mt-4 {
+  position: absolute;
+}
+.name {
+  font-family: ChristmasTimePersonalUse-Regula;
+  font-size: 40px;
+  text-shadow: 1.5px 1.5px rgba(161, 88, 93, 0.329);
+}
+p, li {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.form-group {
+  box-shadow: 1.5px 1.5px 1.5px 1.5px gray;
+}
+.quote {
+  border-top: black solid 2px;
+  padding-top: 80px;
+  
+}
+.quoteText {
+  font-size: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: black;
+  font-weight: bold;
+  line-height: 1.5cm;
+}
+.author {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  color: #b3000c;
+  font-weight: bold;
+  font-style: italic;
+}
+.fa-quote-left {
+  font-size: 40px;
+  color: #b3000c;
+}
+.timer {
+  font-size: 30px;
+  font-family: "Vidaloka", serif;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  border: #b3000c solid 3px;
+  box-shadow: 1px 0px 8px 8px rgba(84, 80, 81, 0.95);
+}
+#demo {
+  font-size: 25px;
+}
+button {
+  font-family: "Vidaloka", serif;
+  letter-spacing: 0.5mm;
+}
+.btn {
+  background-color: #b3000c;
+  color: white;
+}
+.btn:hover {
+  background-color: #0d5901;
+  transition-duration: 0.5s;
+  border: green;
+  color: white;
+}
+/*================================================================*/
+/*================================================================*/
+
+/*============================================*/
+/*================================================================*/
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  font-size: 50px;
+  border-radius: 50%;
+padding: 10px;
+float:right;
+margin: 1%;
+}
+.fa-twitter:hover{
+  background: white;
+  color: #55ACEE
+}
+footer{
+  height: 100px;;
+  background:black
+}
