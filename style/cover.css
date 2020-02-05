@@ -267,6 +267,9 @@ footer{
   .jumbotron h1{
     font-size: 60px;;
   }
+  .photoText {
+    font-size: 60px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -291,7 +294,7 @@ footer{
     .profileText {
       height: auto;
       padding-left: 8%;
-      padding-right: 8%;
+      padding-right: 6%;
       font-size:20px;
     }
     .contact-form{
@@ -303,7 +306,7 @@ footer{
     }
     .team {
       position: relative;
-      font-size: 135px;
+      font-size: 115px;
       font-family: "Vidaloka", serif;
     }
     .jumbotron h1 {
