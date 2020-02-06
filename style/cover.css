@@ -94,11 +94,9 @@ body {
   font-size: 90px;
 }
 
-
 .header {
   position: relative;
 }
-
 
 .rounded-circle {
   height: 320px;
@@ -171,11 +169,12 @@ h1 {
   position: absolute;
 }
 .name {
-  font-family:"Amatic SC", cursive ;
+  font-family: "Amatic SC", cursive;
   font-size: 60px;
   text-shadow: 1.5px 1.5px rgba(161, 88, 93, 0.329);
 }
-p, li {
+p,
+li {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .form-group {
@@ -184,7 +183,6 @@ p, li {
 .quote {
   border-top: black solid 2px;
   padding-top: 80px;
-  
 }
 .quoteText {
   font-size: 35px;
@@ -230,6 +228,13 @@ button {
   border: green;
   color: white;
 }
+.teamTwo{
+  visibility: hidden;
+  position: relative;
+  font-size: 105px;
+  font-family: "Vidaloka", serif;
+
+}
 /*================================================================*/
 /*================================================================*/
 
@@ -240,142 +245,49 @@ button {
   color: white;
   font-size: 50px;
   border-radius: 50%;
-padding: 10px;
+  padding: 10px;
 }
-.fa-twitter:hover{
-  background: #55ACEE;
-  color: white
+.fa-twitter:hover {
+  background: #55acee;
+  color: white;
 }
-footer{
+footer {
   height: auto;
   background-color: #fff;
 }
-#copyright{
-  margin-top:2%;
+#copyright {
+  margin-top: 2%;
   color: #b3000c;
   font-family: "Vidaloka", serif;
-  
 }
-.footerTitle{
-  margin-top:1%;
+.footerTitle {
+  margin-top: 1%;
   font-size: 30px;
-  
+
   color: #b3000c;
   font-family: "Amatic SC", cursive;
   letter-spacing: 2mm;
-
 }
-.eveve{
-  bottom:0;
+.eveve {
+  bottom: 0;
   left: 0;
   right: 0;
   position: absolute;
 }
 /*===========MEDIA==============*/
-/* @media (min-width: 300px) and (max-width: 700px){
-  .eveve{
-    top:0
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .eveve {
+    top: 0;
   }
-  .jumbotron h1{
-    font-size: 60px;;
+  .team{
+    visibility: hidden;;
   }
-  .photoText {
-    font-size: 60px;
+  .teamTwo{
+    visibility: visible;
+  }
+  .quote{
+    border-bottom: black solid 2px;
+
   }
   
 }
-
-@media only screen and (min-width: 900px) {
-  @media only screen and (min-width: 1200px) {
-    .storyText {
-      border-left: black solid 2px;
-      font-size: 20px;
-      padding-left: 3%;
-      padding-right: 3%;
-    }
-    .story {
-      font-size: 175px;
-    }
-    .card-img-top {
-      min-height: 550px;
-      max-height: 550px;
-    
-      object-fit: cover;
-      border-top-right-radius: 15px;
-      border-top-left-radius: 15px;
-    }
-    .profileText {
-      height: auto;
-      padding-left: 8%;
-      padding-right: 6%;
-      font-size:20px;
-    }
-    .contact-form{
-      padding-left: 10%;
-      padding-right: 10%;
-    }
-    .contact{
-      padding-top: 2%;
-    }
-    .team {
-      position: relative;
-      font-size: 115px;
-      font-family: "Vidaloka", serif;
-    }
-    .jumbotron h1 {
-      font-size: 9vw;
-      text-align: center;
-      color: red;
-      font-family: "Amatic SC", cursive;
-      margin-bottom: 0px;
-    }
-    .iconTab {
-      float: left;
-      font-size: 35px;
-      padding-left: 2px;
-      color: #b3000c;
-    }
-    #mySidenav a {
-      position: fixed;
-      right: -110px;
-      transition: 0.3s;
-      padding: 5px;
-      width: 165px;
-      text-decoration: none;
-      font-size: 22px;
-      color: #b3000c;
-      border-radius: 5px 0px 0px 5px;
-      text-align: right;
-      z-index: 5;
-      font-family: "Amatic SC", cursive;
-      margin-top: 100px;
-      letter-spacing: 0.05cm;
-      font-weight: bolder;
-    }
-    .timer{
-      font-size: 45px;
-    }
-    #demo{
-      font-size: 35px;;
-    }
-    
-  }
-} */
-/* 
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {
-  .eveve{
-    top:0;
-  }
-  .jumbotron h1 {
-    font-size: 20vw;
-    text-align: center;
-    color: red;
-    font-family: "Amatic SC", cursive;
-    margin-bottom: 0px;
-    letter-spacing: 0.25cm;
-  }
-  
-} */
