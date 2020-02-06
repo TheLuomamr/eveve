@@ -321,9 +321,3 @@ footer {
     top: 0;
   }
 }
-
-@media only screen and (orientation: landscape){
-  .eveve{
-    top: 0;
-  }
-}
