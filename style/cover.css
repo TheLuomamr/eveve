@@ -316,7 +316,7 @@ footer {
     position: relative;
   }
 }
-@media only screen and (min-device-width: 810px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 810px) and (max-device-width: 1024px) and (orientation : landscape){
   .eveve {
     top: 0;
   }
