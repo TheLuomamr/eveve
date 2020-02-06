@@ -230,9 +230,9 @@ button {
 }
 .teamTwo{
   visibility: hidden;
-  position: relative;
   font-size: 105px;
   font-family: "Vidaloka", serif;
+  position: absolute
 
 }
 /*================================================================*/
@@ -275,7 +275,7 @@ footer {
   position: absolute;
 }
 /*===========MEDIA==============*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation : portrait) {
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation : portrait) {
   .eveve {
     top: 0;
   }
@@ -326,4 +326,4 @@ footer {
   .footerTitle{
     letter-spacing: 1mm;
   }
-}
+} */
