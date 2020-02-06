@@ -1,8 +1,8 @@
-body{
-    background-color: black;
+body {
+  min-width: 100%;
+  min-height: 100%;
 }
-h1{
-    margin-top: 25%;
-    text-align: center;
-    color:white;
+
+.container{
+    height: 500px;
 }

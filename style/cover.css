@@ -275,7 +275,7 @@ footer {
   position: absolute;
 }
 /*===========MEDIA==============*/
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .eveve {
     top: 0;
   }
@@ -295,5 +295,30 @@ footer {
   .profileText{
     font-size: 24px;
   }
-  
+  .jumbotron h1{
+    font-size: 20vw;
+  }
+  .profileText{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .footerTitle{
+    letter-spacing: 1mm;
+  }
+  .jumbotron{
+    background-image: url('../images/Photo Shoot - Year 2/E5.jpg');
+    height: 115vh;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: black solid 2px;
+    position: relative;
+  }
+}
+@media only screen and (min-device-width: 810px) and (max-device-width: 1024px) {
+  .eveve {
+    top: 0;
+  }
+
 }
