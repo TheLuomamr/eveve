@@ -141,6 +141,7 @@ body {
   background-color: #d1d6cb;
   border-top: black solid 3px;
   border-bottom: black solid 3px;
+  padding-bottom: 25px;
 }
 #profiles {
   /* background-color: #d1d6cb; */
@@ -235,21 +236,34 @@ button {
 /*============================================*/
 /*================================================================*/
 .fa-twitter {
-  background: #55ACEE;
+  background: #b3000c;
   color: white;
   font-size: 50px;
   border-radius: 50%;
 padding: 10px;
-float:right;
-margin: 1%;
 }
 .fa-twitter:hover{
-  background: white;
-  color: #55ACEE
+  background: #55ACEE;
+  color: white
 }
 footer{
-  height: 100px;;
-  background:black
+  height: auto;
+  background-color: #fff;
+}
+#copyright{
+  margin-top:2%;
+  color: #b3000c;
+  font-family: "Vidaloka", serif;
+  
+}
+.footerTitle{
+  margin-top:1%;
+  font-size: 30px;
+  
+  color: #b3000c;
+  font-family: "Amatic SC", cursive;
+  letter-spacing: 2mm;
+
 }
 .eveve{
   bottom:0;
