@@ -282,9 +282,9 @@ footer {
   .team{
     visibility: hidden;;
   }
-  .teamTwo{
+  /* .teamTwo{
     visibility: visible;
-  }
+  } */
   .quote{
     border-bottom: black solid 2px;
 
@@ -318,11 +318,11 @@ footer {
 }
 @media only screen and (min-device-width: 730px) and (max-device-width: 1024px) and (orientation: landscape){
   .team{
-    visibility: hidden;;
+    visibility: hidden;
   }
-  .teamTwo{
+  /* .teamTwo{
     visibility: visible;
-  }
+  } */
   .footerTitle{
     letter-spacing: 1mm;
   }
