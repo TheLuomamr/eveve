@@ -316,8 +316,14 @@ footer {
     position: relative;
   }
 }
-@media only screen and (min-device-width: 810px) and (max-device-width: 1024px){
-  .eveve {
-    top: 0;
+@media only screen and (min-device-width: 730px) and (max-device-width: 1024px) and (orientation: landscape){
+  .team{
+    visibility: hidden;;
+  }
+  .teamTwo{
+    visibility: visible;
+  }
+  .footerTitle{
+    letter-spacing: 1mm;
   }
 }
