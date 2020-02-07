@@ -327,7 +327,7 @@ footer {
     letter-spacing: 1mm;
   }
 }
-@media only screen and (min-device-width: 1200px) and (orientation : landscape) {
+@media only screen and (min-device-width: 1300px) and (orientation : landscape) {
   .card-img-top{
     min-height: 525px;
   }
