@@ -1,20 +1,157 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap");
+/*======================================================================================================*/
 
 html {
   min-width: 100%;
   min-height: 100%;
-  background-image: url("../images/Profilepics/boys.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
+}
+body {
+  background-color: white;
+}
+.jumbotron {
+  border-bottom: solid #b3000c 8px;
+  height: auto;
+}
+.homeBtnTop{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 3%;
+  color: rgba(0, 0, 0, 0.527)
+}
+h1 {
+  font-family: "Vidaloka", serif;
+  font-size: 10vw;
+  text-align: center;
+  color: black;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+a {
+  text-decoration: none !important;
 }
 
-h1{
+li {
+  border-right: #b3000c solid 3px;
+}
+a {
+  margin: 12px;
   font-family: "Amatic SC", cursive;
-  font-size: 15vw;
-  text-align: center;
+  font-size: 4vw;
+  color: black;
+}
+.active-page {
+  color: #0d5901;
+  text-decoration: underline;
+}
+a:hover {
+  color: #b3000c;
+}
+li a.active-page {
+  border-bottom: solid 3px #0d5901;
+}
+
+
+/*=============*/
+.photos{
+  margin-top: 5%;
+}
+.container img {
+  width: 100%;
+  margin-bottom: 30px;
+  /* transition: 0.1s ease-in-out; */
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+footer {
+  height: auto;
+  background-color: #fff;
+  margin-top: 50px;
+  border-top: solid 2px #b3000c;
+}
+#copyright {
+  padding-top: 20px;
+  color: #b3000c;
+  font-family: "Vidaloka", serif;
+}
+.footerTitle {
+  margin-top: 15px;
+  font-size: 30px;
+
+  color: #b3000c;
+  font-family: "Amatic SC", cursive;
+  letter-spacing: 2mm;
+}
+.fa-twitter {
+  background: #b3000c;
+  color: white;
+  font-size: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-top: 1px;
+}
+.fa-home{
+  color: #b3000c;
+  font-size: 60px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.fa-home:hover{
+  color: black
+}
+.fa-twitter:hover {
+  background: #55acee;
+  color: white;
+}
+h2 {
+  font-family: "Vidaloka", serif;
+  font-size: 6vw;
+}
+.contact{
+  background-color: #e9ecef
+}
+
+/*==========Media==============*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: portrait) {
+  body {
+    padding: 0;
+  }
+  a {
+    font-size: 10vw;
+  }
+  li {
+    border: none;
+  }
+  .row {
+    border-bottom: solid 3px black;
+  }
+  .nav {
+    padding-left: 20px;
+  }
+
+  .container.gallery-container {
+    border-radius: 0;
+  }
+  .footerTitle {
+    letter-spacing: 1mm;
+    font-size: 20px;
+  }
+  .homeBtnBottom{
+    visibility: hidden
+  }
+  .col-sm-4{
+    padding: 0px;
+    height: 1px;
+  }
+  #copyright{
+    font-size: 11px;
+    margin-left: 1px;
+  }
 
 }

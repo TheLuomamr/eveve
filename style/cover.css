@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Girassol&display=swap");
 /*font-family: 'Vidaloka', serif;
 /* font-family:ChristmasTimePersonalUse-Regula; */
+/*font-family: 'Girassol', cursive;*/
 
 /*==============================================*/
 
@@ -11,7 +13,7 @@ body {
 }
 
 .jumbotron {
-  height: 115vh;
+  height: 145vh;
   width: auto;
   background-image: url("../images/Profilepics/FotoJet.jpg");
   background-size: cover;
@@ -22,66 +24,28 @@ body {
 }
 .jumbotron h1 {
   font-size: 11vw;
-  text-align: center;
-  color: red;
-  font-family: "Amatic SC", cursive;
+  font-family: "Girassol", cursive;
   margin-bottom: 0px;
   letter-spacing: 0.25cm;
-}
-/*==========SIDE NAV============= */
-#mySidenav a {
-  position: fixed;
-  right: -110px;
-  transition: 0.3s;
-  padding: 5px;
-  width: 150px;
-  text-decoration: none;
-  font-size: 18px;
   color: #b3000c;
-  border-radius: 5px 0px 0px 5px;
-  text-align: right;
-  z-index: 5;
-  font-family: "Amatic SC", cursive;
-  margin-top: 100px;
-  letter-spacing: 0.05cm;
-  font-weight: bolder;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  text-align: center
+
+}
+#eveve{
+  font-size: 10vw;
 }
 
-#mySidenav a:hover {
-  right: 0;
-}
+/*=============NAV============= */
 
-#aboutTab {
-  top: 20px;
-  background-color: #959b8f;
-}
-
-#photoTab {
-  top: 80px;
-  background-color: #959b8f;
-}
-
-#profileTab {
-  top: 140px;
-  background-color: #959b8f;
-}
-
-#contactTab {
-  top: 200px;
-  background-color: #959b8f;
-}
-.iconTab {
-  float: left;
-  font-size: 25px;
-  padding-left: 6px;
-  color: #b3000c;
-}
 /*==========SIDE NAV============= */
 #about {
   border-bottom: black solid 2px;
 }
 .story {
   font-size: 150px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 .storyText {
   border-left: black solid 2px;
@@ -91,7 +55,8 @@ body {
   background-color: #d1d6cb;
 }
 .photoText {
-  font-size: 90px;
+  font-size: 10vw;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
 .header {
@@ -164,6 +129,8 @@ h1 {
   position: relative;
   font-size: 105px;
   font-family: "Vidaloka", serif;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+
 }
 .mt-4 {
   position: absolute;
@@ -218,22 +185,26 @@ button {
   font-family: "Vidaloka", serif;
   letter-spacing: 0.5mm;
 }
-.btn {
+.btn-submit {
   background-color: #b3000c;
   color: white;
 }
-.btn:hover {
+.btn-submit:hover {
   background-color: #0d5901;
   transition-duration: 0.5s;
   border: green;
   color: white;
 }
-.teamTwo{
+.teamTwo {
   visibility: hidden;
   font-size: 105px;
   font-family: "Vidaloka", serif;
-  position: absolute
-
+  position: absolute;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+hr{
+  width: 50%;
+  border: 1px solid rgb(15,14,14)
 }
 /*================================================================*/
 /*================================================================*/
@@ -268,45 +239,51 @@ footer {
   font-family: "Amatic SC", cursive;
   letter-spacing: 2mm;
 }
-.eveve {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-}
-/*===========MEDIA==============*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation : portrait) {
+
+/*===========MEDIA======================================*/
+/*======================================================*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: portrait) {
   .eveve {
     top: 0;
   }
-  .team{
-    visibility: hidden;;
+  .team {
+    visibility: hidden;
+    position: absolute;
   }
-  /* .teamTwo{
+  .teamTwo{
     visibility: visible;
-  } */
-  .quote{
+    position: relative
+  }
+  hr{
+    width: 20%;
+  border: 1px solid rgb(15,14,14)
+  }
+  .quote {
     border-bottom: black solid 2px;
-
   }
-  .storyText{
+  .storyText {
     font-size: 24px;
   }
-  .profileText{
+  .profileText {
     font-size: 24px;
   }
-  .jumbotron h1{
+  .jumbotron h1 {
     font-size: 20vw;
+    text-align: center
   }
-  .profileText{
+  #eveve{
+    font-size: 18vw
+  }
+  .profileText {
     padding-left: 25px;
     padding-right: 25px;
   }
-  .footerTitle{
+  .footerTitle {
     letter-spacing: 1mm;
   }
-  .jumbotron{
-    background-image: url('../images/Photo Shoot - Year 2/E5.jpg');
+  .jumbotron {
+    background-image: url("../images/Photo Shoot - Year 2/E5.jpg");
     height: 115vh;
     width: auto;
     background-size: cover;
@@ -315,20 +292,73 @@ footer {
     border-bottom: black solid 2px;
     position: relative;
   }
-}
-@media only screen and (min-device-width: 730px) and (max-device-width: 1024px) and (orientation: landscape){
-  .team{
-    visibility: hidden;
+  .story{
+    margin-bottom:50px;
   }
-  /* .teamTwo{
+}
+@media only screen and (min-device-width: 570px) and (max-device-width: 900px) and (orientation: landscape) {
+  .team {
+    visibility: hidden;
+    position: absolute;
+  }
+  .teamTwo{
     visibility: visible;
-  } */
-  .footerTitle{
+    position: relative;
+  }
+  hr{
+    width: 20%;
+  border: 1px solid rgb(15,14,14)
+  }
+  .footerTitle {
     letter-spacing: 1mm;
   }
+  .profileText{
+    font-size: 25px;
+    padding-left: 10%;
+    padding-right: 10%
+  }
+  p{
+    font-size: 22px;
+  }
+  .storyText{
+    padding-right: 5%;
+    padding-left: 5%;
+  }
 }
-@media only screen and (min-device-width: 1300px) and (orientation : landscape) {
-  .card-img-top{
+@media only screen and (min-device-width: 1300px) and (orientation: landscape) {
+  .card-img-top {
     min-height: 525px;
   }
 }
+@media only screen and (min-device-width: 1024px) and (orientation: portrait){
+  .jumbotron h1 {
+    font-size: 15vw;
+    font-family: "Girassol", cursive;
+    margin-bottom: 0px;
+    letter-spacing: 0.25cm;
+    color: #b3000c;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    text-align: center
+  
+  }
+  #eveve{
+    font-size: 15vw;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (orientation: landscape){
+  .story{
+  margin-top: 20%;
+  }
+  .col-md-4{
+    padding-right: 2rem !important;
+    padding-left: 2rem !important
+  }
+  .quote{
+    padding-top: 2rem !important
+
+  }
+}
+/*===================================*/
+/*===================================*/
+/*===================================*/
