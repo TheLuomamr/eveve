@@ -278,7 +278,7 @@ footer {
   .profileText {
     font-size: 24px;
   }
-  .jumbotron img {
+  .logo1 {
     width: 35%;
   }
   #eveve {
@@ -357,6 +357,15 @@ footer {
   #eveve {
     font-size: 15vw;
   }
+  .logo1 {
+    padding-top: 15px;
+    position: relative;
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+  }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1679px) and (orientation: landscape) {
   /* .story{
@@ -368,6 +377,15 @@ footer {
   }
   .quote {
     padding-top: 2rem !important;
+  }
+  .logo1 {
+    padding-top: 15px;
+    position: relative;
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
   }
 }
 
