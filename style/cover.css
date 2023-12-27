@@ -306,6 +306,7 @@ footer {
     background-repeat: no-repeat;
     border-bottom: black solid 2px;
     position: relative;
+    zoom: 77%;
   }
   .story {
     margin-bottom: 50px;
