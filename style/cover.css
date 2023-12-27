@@ -281,7 +281,7 @@ footer {
   .logo1 {
     padding-top: 15px;
     position: relative;
-    height: 30%;
+    height: 20%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -298,7 +298,7 @@ footer {
     letter-spacing: 1mm;
   }
   .jumbotron {
-    background-image: url("../images/Photo Shoot - Year 2/E5.jpg");
+    background-image: url("../images/Photos_year10/DSC_0867-2.jpg");
     height: 115vh;
     width: auto;
     background-size: cover;
