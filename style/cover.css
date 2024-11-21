@@ -79,6 +79,7 @@ body {
 .storyText {
   border-left: black solid 2px;
   height: 500px;
+  font-size: 25px;
 }
 #photos {
   border-bottom: black solid 2px;
@@ -282,7 +283,7 @@ footer {
     border-bottom: black solid 2px;
   }
   .storyText {
-    font-size: 32px;
+    font-size: 35px;
   }
   .profileText {
     font-size: 24px;
