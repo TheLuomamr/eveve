@@ -58,6 +58,7 @@ body {
   border: #b3000c solid 3px;
   box-shadow: 1px 0px 8px 8px rgba(84, 80, 81, 0.95);
   padding: 1px 4px 1px;
+
 }
 #demo {
   font-size: 25px;
@@ -98,7 +99,13 @@ body {
   height: 320px;
   width: 320px;
   border: white solid 5px;
-  box-shadow: 1px 0px 8px 8px rgba(84, 80, 81, 0.95);
+  box-shadow: 1px 0px 8px 8px rgba(161, 24, 58, 0.95);
+  
+}
+.rounded-circle:hover{
+  
+  transition-duration: 1s;
+  box-shadow: 1px 0px 8px 8px rgba(55,139,41);
 }
 .profileText {
   height: auto;
@@ -226,6 +233,7 @@ hr {
   width: 50%;
   border: 1px solid rgb(15, 14, 14);
 }
+
 /*================================================================*/
 /*================================================================*/
 
@@ -433,3 +441,4 @@ footer {
 /*===================================*/
 /*===================================*/
 /*===================================*/
+
