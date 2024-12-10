@@ -6,7 +6,9 @@
 /*font-family: 'Girassol', cursive;*/
 
 /*==============================================*/
-
+html{
+  position:relative
+}
 body {
   min-width: 100%;
   min-height: 100%;
@@ -70,7 +72,9 @@ body {
 /*==========SIDE NAV============= */
 #about {
   border-bottom: black solid 2px;
+  background-color: #d1d6cb;
 }
+
 .story {
   font-size: 150px;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
@@ -85,6 +89,7 @@ body {
 #photos {
   border-bottom: black solid 2px;
   background-color: #d1d6cb;
+  border-top: black solid 2px;
 }
 .photoText {
   font-size: 10vw;
@@ -267,6 +272,76 @@ footer {
   font-family: "Amatic SC", cursive;
   letter-spacing: 2mm;
 }
+
+/* Advent Calendar */
+/* body {
+  margin: 0;
+  padding: 0;
+} */
+.advent h1{
+  font-size: 4.0rem
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  max-width: 1100px; /* Updated to fit the larger boxes */
+  margin: 0 auto;
+}
+
+.day{
+  width: 200px; /* Updated width */
+  height: 200px; /* Updated height */
+  background-image: url("../images/christmas-trees.webp");
+  background-size:cover;
+  background-color: #d1d6cb;
+  border-radius: 20px;
+  border: 4px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:2.7rem;
+  font-weight: bold;
+  color: rgb(11, 11, 11);
+  cursor: pointer;
+  position: relative;
+  font-family: "Amatic SC", cursive;
+}
+
+.day:hover{
+  transform: scale(1.08)
+}
+
+.day img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.day.revealed {
+  background-color: #fff;
+  border: 4px solid black;
+  border-radius: 20px;
+}
+
+.day.revealed img {
+  display: block;
+  border-radius: 20px;
+}
+
+.day.revealed {
+  background-color: #fff;
+  border: 2px solid black;
+}
+
+.day.revealed img {
+  display: block;
+}
+
 
 /*===========MEDIA======================================*/
 /*======================================================*/
