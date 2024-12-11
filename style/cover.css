@@ -345,6 +345,7 @@ footer {
 }
 
 
+
 /*===========MEDIA======================================*/
 /*======================================================*/
 
@@ -520,35 +521,23 @@ footer {
 /*===================================*/
 
 /* Responsive Styles */
-@media (max-width: 1024px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: portrait) {
   .calendar {
-    grid-template-columns: repeat(4, 1fr); /* Reduce to 4 columns */
+    display: flex; /* Use flexbox instead of grid for single item */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* height: 100vh; Fill the viewport height */
+    padding-top:20px;
+    padding-bottom: 20px;
   }
 
   .day {
-    width: 150px; /* Adjust box size for smaller screens */
-    height: 150px;
-  }
-}
-
-@media (max-width: 768px) {
-  .calendar {
-    grid-template-columns: repeat(3, 1fr); /* Reduce to 3 columns */
+    width: 80vw; /* Larger size based on viewport width */
+    height: 80vw; /* Keep it square */
+    font-size: 6rem; /* Adjust font size */
   }
 
-  .day {
-    width: 120px; /* Further reduce box size */
-    height: 120px;
-  }
-}
-
-@media (max-width: 480px) {
-  .calendar {
-    grid-template-columns: repeat(2, 1fr); /* Reduce to 2 columns */
-  }
-
-  .day {
-    width: 100px; /* Smaller boxes for narrow screens */
-    height: 100px;
+  .day.hidden {
+    display: none; /* Hide all other days */
   }
 }
