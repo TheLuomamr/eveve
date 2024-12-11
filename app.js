@@ -155,4 +155,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     console.log("Is portrait mobile detected?", isPortraitMobile);
   });
+  
 });
+
+
+
