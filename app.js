@@ -153,7 +153,6 @@ document.addEventListener('DOMContentLoaded', () => {
         day.title = "This day is not yet available!";
       }
     }
-    console.log("Is portrait mobile detected?", isPortraitMobile);
+    
   });
-  
 });
