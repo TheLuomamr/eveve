@@ -287,6 +287,8 @@ footer {
   gap: 10px;
   max-width: 1100px; /* Updated to fit the larger boxes */
   margin: 0 auto;
+  justify-content: center;
+  align-content: center;
 }
 
 .day{
@@ -517,3 +519,36 @@ footer {
 /*===================================*/
 /*===================================*/
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .calendar {
+    grid-template-columns: repeat(4, 1fr); /* Reduce to 4 columns */
+  }
+
+  .day {
+    width: 150px; /* Adjust box size for smaller screens */
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar {
+    grid-template-columns: repeat(3, 1fr); /* Reduce to 3 columns */
+  }
+
+  .day {
+    width: 120px; /* Further reduce box size */
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar {
+    grid-template-columns: repeat(2, 1fr); /* Reduce to 2 columns */
+  }
+
+  .day {
+    width: 100px; /* Smaller boxes for narrow screens */
+    height: 100px;
+  }
+}
