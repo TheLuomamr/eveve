@@ -13,7 +13,13 @@ body {
   min-width: 100%;
   min-height: 100%;
   cursor: url('/images/Jelly.png'),auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0; /* Remove default browser margin */
 }
+
 
 .jumbotron {
   height: 145vh;
@@ -74,7 +80,6 @@ body {
   border-bottom: black solid 2px;
   background-color: #d1d6cb;
 }
-
 .story {
   font-size: 150px;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
@@ -105,10 +110,10 @@ body {
   width: 320px;
   border: white solid 5px;
   box-shadow: 1px 0px 8px 8px rgba(161, 24, 58, 0.95);
-  
+
 }
 .rounded-circle:hover{
-  
+
   transition-duration: 1s;
   box-shadow: 1px 0px 8px 8px rgba(55,139,41);
 }
@@ -273,11 +278,106 @@ footer {
   letter-spacing: 2mm;
 }
 
-/* Advent Calendar */
-/* body {
+.advent{
+ justify-content: center !important;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.calendar div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-size: 2.7rem;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  background-image: url("../images/christmas-trees.webp");
+  background-size:cover;
+  width: 200px; 
+  height: 200px;
+  font-family: "Amatic SC", cursive;
+  border-radius: 20px;
+  border: 4px solid black;
+  background-color: #d1d6cb;
+  
+}
+.advent h1{
+  font-size: 4.0rem}
+
+.calendar div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  border-radius: 20px;
+}
+
+.calendar div.open img {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .calendar {
+      grid-template-columns: 1fr;
+  }
+
+  .calendar div {
+      display: none;
+      font-size: 4.7rem;
+  }
+
+  .calendar div.current-day {
+      display: flex;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: portrait) {
+  .calendar {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      width:350px;
+  }
+
+  .calendar div {
+      display: none;
+      width:400px;
+      height:400px;
+      font-size: 4.7rem;
+  }
+
+  .calendar div.current-day {
+      display: flex;
+      width:500px;
+      height:500px;
+  }
+  /* @media only screen and (min-device-width: 992px){
+    .calendar {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      width:1100px;
+  }
+  } */
+
+}
+
+/* Advent Calendar
+ body {
   margin: 0;
   padding: 0;
-} */
+}
 .advent h1{
   font-size: 4.0rem
 }
@@ -285,15 +385,12 @@ footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
-  max-width: 1100px; /* Updated to fit the larger boxes */
+  max-width: 1100px; 
   margin: 0 auto;
-  justify-content: center;
-  align-content: center;
 }
-
 .day{
-  width: 200px; /* Updated width */
-  height: 200px; /* Updated height */
+  width: 200px; 
+  height: 200px; 
   background-image: url("../images/christmas-trees.webp");
   background-size:cover;
   background-color: #d1d6cb;
@@ -309,11 +406,9 @@ footer {
   position: relative;
   font-family: "Amatic SC", cursive;
 }
-
 .day:hover{
   transform: scale(1.08)
 }
-
 .day img {
   width: 100%;
   height: 100%;
@@ -323,27 +418,22 @@ footer {
   top: 0;
   left: 0;
 }
-
 .day.revealed {
   background-color: #fff;
   border: 4px solid black;
   border-radius: 20px;
 }
-
 .day.revealed img {
   display: block;
   border-radius: 20px;
 }
-
 .day.revealed {
   background-color: #fff;
   border: 2px solid black;
 }
-
 .day.revealed img {
-  display: block;
+  display: block; 
 }
-
 
 
 /*===========MEDIA======================================*/
@@ -425,7 +515,7 @@ footer {
     font-size: 25px;
     text-align: center;
   }
- 
+
 }
 @media only screen and (min-device-width: 570px) and (max-device-width: 900px) and (orientation: landscape) {
   .team {
@@ -489,10 +579,10 @@ footer {
     margin-right: auto;
     width: 35%;
   }
-  
+
 }
 
-    
+
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1679px) and (orientation: landscape) {
   /* .story{
   margin-top: 20%;
@@ -519,25 +609,3 @@ footer {
 /*===================================*/
 /*===================================*/
 /*===================================*/
-
-/* Responsive Styles */
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: portrait) {
-  .calendar {
-    display: flex; /* Use flexbox instead of grid for single item */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    /* height: 100vh; Fill the viewport height */
-    padding-top:20px;
-    padding-bottom: 20px;
-  }
-
-  .day {
-    width: 80vw; /* Larger size based on viewport width */
-    height: 80vw; /* Keep it square */
-    font-size: 6rem; /* Adjust font size */
-  }
-
-  .day.hidden {
-    display: none; /* Hide all other days */
-  }
-}
