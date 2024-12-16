@@ -61,16 +61,15 @@ const images = [
 './images/Photos2023/DSC_2007.jpg',
 './images/Photo Shoot - Year 1/HiRes_0436224860193.jpg', 
 './images/YEAR11/DSC_3144.jpg', 
-'./images/Photo Shoot - Year 7/DSC07921-2.jpg', 
-'./images/Photos2023/DSC_2125.jpg', 
-'./images/YEAR11/DSC_3132.jpg',
-'./images/Photo Shoot - Year 1/HiRes_0436224860011.jpg'
+'./images/EVEVE.webp', 
+
+
 ];
 
 const today = new Date().getDate();
 const calendar = document.getElementById('calendar');
 
-for (let i = 1; i <= 25; i++) {
+for (let i = 1; i <= 23; i++) {
   const day = document.createElement('div');
   day.textContent = i;
 
