@@ -61,7 +61,7 @@ const images = [
 './images/Photos2023/DSC_2007.jpg',
 './images/Photo Shoot - Year 1/HiRes_0436224860193.jpg', 
 './images/YEAR11/DSC_3144.jpg', 
-'./images/EVEVE.webp', 
+'./images/Photo Shoot - Year 8/IMG_3225.JPG', 
 
 
 ];
