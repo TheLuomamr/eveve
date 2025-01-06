@@ -483,6 +483,9 @@ footer {
     font-size: 25px;
     text-align: center;
   }
+  #twelvetext{
+    font-size: 25px;;
+  }
 
 }
 @media only screen and (min-device-width: 570px) and (max-device-width: 900px) and (orientation: landscape) {
@@ -571,4 +574,11 @@ footer {
     margin-right: auto;
     width: 35%;
   }
+  
 }}
+
+@media only screen and (min-device-width: 1600px) and (orientation:landscape){
+  .card-img-top{
+    min-height:600px;
+  }
+}
