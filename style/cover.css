@@ -12,7 +12,7 @@ html{
 body {
   min-width: 100%;
   min-height: 100%;
-  cursor: url('/images/Jelly.png'),auto;
+  cursor: auto;
   display: flex;
   justify-content: center;
   align-items: center;

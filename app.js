@@ -38,7 +38,7 @@ document.getElementById("demo").innerHTML = "It's Christmas EVE EVE!";
 }
 }, 1000);
 
-const images = [
+/* const images = [ 
   './images/Photo Shoot - Year 2/E3.jpg', 
 './images/Photo Shoot - Year 1/HiRes_0436224860169.jpg',
 './images/Photo Shoot - Year 3/P2.jpg', 
@@ -91,6 +91,7 @@ for (let i = 1; i <= 23; i++) {
 
   calendar.appendChild(day);
 }
+*/
 
 
 //Snowflakes//
@@ -191,6 +192,11 @@ function setTransform(xPos, yPos, scale, el) {
 function generateSnowflakes() {
   // get our snowflake element from the DOM and store it
   let originalSnowflake = document.querySelector(".snowflake");
+
+  // Check if snowflake element exists before proceeding
+  if (!originalSnowflake) {
+    return; // Exit early if snowflake element doesn't exist
+  }
 
   // access our snowflake element's parent container
   let snowflakeContainer = originalSnowflake.parentNode;
