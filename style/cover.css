@@ -357,6 +357,125 @@ footer {
   height: 10px;
 }
 
+/*====Snowflake Fireworks=====*/
+.fireworks-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.firework-particle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 1;
+  pointer-events: none;
+  animation: firework-explode 2s ease-out forwards;
+  transform-origin: center;
+}
+
+.firework-particle::before {
+  content: '❄';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(198, 251, 255, 1), 0 0 12px rgba(176, 240, 255, 0.8);
+  line-height: 1;
+  filter: drop-shadow(0 0 3px rgba(198, 251, 255, 0.9));
+}
+
+@keyframes firework-explode {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+/*====Happy 20 Years Banner=====*/
+.anniversary-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: linear-gradient(135deg, rgba(179, 0, 12, 0.85) 0%, rgba(139, 0, 0, 0.85) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  padding: 30px 60px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(179, 0, 12, 0.6), 0 0 20px rgba(13, 89, 1, 0.4);
+  z-index: 1001;
+  text-align: center;
+  font-family: 'Vidaloka', serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border: 4px solid rgba(13, 89, 1, 0.8);
+  display: none;
+  pointer-events: auto;
+}
+
+.anniversary-banner::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(135deg, #0d5901 0%, #b3000c 50%, #0d5901 100%);
+  border-radius: 20px;
+  z-index: -1;
+  animation: banner-glow 2s ease-in-out infinite;
+}
+
+@keyframes banner-popup {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes banner-glow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: portrait) {
+  .anniversary-banner {
+    font-size: 32px;
+    padding: 20px 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .calendar {
       grid-template-columns: 1fr;

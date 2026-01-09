@@ -31,6 +31,8 @@
     <!-------------Jumbo/nav---------------->
     <div class="container-full-bg mt-0 pt-0">
         <div class="jumbotron pt-0 pb-0 mb-0">
+            <div class="fireworks-container" id="fireworksContainer"></div>
+            <div class="anniversary-banner" id="anniversaryBanner">Happy 20 Years, Christmas Eve Eve Family!</div>
             <!--------
             <h1>Christmas</h1>
             <h1 id="eveve">eveve</h1>
@@ -44,7 +46,7 @@
                 <a href="#contact" id="contactTab"><i class="fas fa-envelope-square iconTab"></i>Contact.</a>
             </div> -->
             <div class="timer">
-                Christmas Eve Eve <span style="color: #B3000C">2025</span>:
+                Christmas Eve Eve <span style="color: #B3000C">2026</span>:
                 <p id="demo"></p>
             </div>
         </div>
@@ -294,8 +296,8 @@
                     </div>
                     <!----Year 15----->
                     <div class="card L">
-                        <!--<a href="">--> <img class="card-img-top" src="./images/20years.png"
-                            alt="Card image cap"></a>
+                        <a href="yearFifteen.html"><img class="card-img-top"
+                                src="./images/2025/Christmas EvEve 2025-127.jpg" alt="Card image cap"></a>
                         <div class="card-body text-center pt-2">
                             <h5 class="card-title"> 2025 - Year Fifteen</h5>
                         </div>
@@ -576,6 +578,103 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
         <!-- <script src="path/to/lightbox.js"></script> -->
+
+        <!-- Snowflake Fireworks Script -->
+        <script>
+            (function () {
+                const jumbotron = document.querySelector('.jumbotron');
+                const fireworksContainer = document.getElementById('fireworksContainer');
+                const banner = document.getElementById('anniversaryBanner');
+
+                // Create snowflake firework explosion
+                function createSnowflakeFirework(x, y, delay = 0) {
+                    setTimeout(() => {
+                        const particleCount = 16; // 16 particles for snowflake shape (8 directions with 2 particles each)
+
+                        for (let i = 0; i < particleCount; i++) {
+                            const particle = document.createElement('div');
+                            particle.className = 'firework-particle';
+
+                            const angle = (i * 360) / particleCount;
+                            const distance = 120 + Math.random() * 80;
+                            const rad = (angle * Math.PI) / 180;
+
+                            const endX = x + Math.cos(rad) * distance;
+                            const endY = y + Math.sin(rad) * distance;
+
+                            particle.style.left = x + 'px';
+                            particle.style.top = y + 'px';
+
+                            fireworksContainer.appendChild(particle);
+
+                            // Force reflow
+                            void particle.offsetWidth;
+
+                            // Animate particle movement
+                            particle.style.transition = 'all 2s ease-out';
+                            particle.style.left = endX + 'px';
+                            particle.style.top = endY + 'px';
+                            particle.style.transform = 'rotate(' + (angle + 360) + 'deg) scale(0)';
+                            particle.style.opacity = '0';
+
+                            // Remove particle after animation
+                            setTimeout(() => {
+                                if (particle.parentNode) {
+                                    particle.parentNode.removeChild(particle);
+                                }
+                            }, 2000);
+                        }
+                    }, delay);
+                }
+
+                // Create multiple firework explosions
+                function triggerFireworks() {
+                    const jumbotronRect = jumbotron.getBoundingClientRect();
+                    const centerX = jumbotronRect.width / 2;
+                    const centerY = jumbotronRect.height / 2;
+
+                    // Create main center explosion
+                    createSnowflakeFirework(centerX, centerY, 0);
+
+                    // Create additional explosions around the center
+                    createSnowflakeFirework(centerX - 100, centerY - 50, 200);
+                    createSnowflakeFirework(centerX + 100, centerY - 50, 400);
+                    createSnowflakeFirework(centerX - 150, centerY + 50, 600);
+                    createSnowflakeFirework(centerX + 150, centerY + 50, 800);
+                    createSnowflakeFirework(centerX, centerY - 100, 1000);
+                    createSnowflakeFirework(centerX, centerY + 100, 1200);
+
+                    // Show banner after first explosion
+                    setTimeout(() => {
+                        banner.style.display = 'block';
+                        banner.style.animation = 'banner-popup 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards';
+                    }, 500);
+
+                    // Hide banner after animation (stay visible for 7 seconds total)
+                    setTimeout(() => {
+                        banner.style.animation = 'banner-popup 0.5s reverse forwards';
+                        setTimeout(() => {
+                            banner.style.display = 'none';
+                            banner.style.animation = 'none';
+                        }, 500);
+                    }, 7000);
+                }
+
+                // Trigger fireworks on page load
+                window.addEventListener('load', () => {
+                    setTimeout(triggerFireworks, 500);
+                });
+
+                // Optional: Re-trigger on click
+                jumbotron.addEventListener('click', () => {
+                    banner.style.display = 'none';
+                    banner.style.animation = 'none';
+                    // Clear existing particles
+                    fireworksContainer.innerHTML = '';
+                    setTimeout(triggerFireworks, 100);
+                });
+            })();
+        </script>
 </body>
 
 </html>
